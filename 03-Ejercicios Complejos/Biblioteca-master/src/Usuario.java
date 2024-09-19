@@ -15,6 +15,7 @@ public class Usuario {
         this.contrasenaHash = hashContrasena(contrasena);
     }
 
+    //incriptar la contraseña
     private String hashContrasena(String contrasena) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -29,6 +30,7 @@ public class Usuario {
         }
     }
 
+    //get y set de la clase
     public String getNombre() {
         return nombre;
     }
